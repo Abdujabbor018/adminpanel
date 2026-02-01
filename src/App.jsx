@@ -10,7 +10,7 @@ import './App.css'
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/AdminPanel/'>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Students />} />
