@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import Layout from './Components/Layout'
 import Students from './pages/Students'
 import Teachers from './pages/Teachers'
@@ -10,7 +10,7 @@ import './App.css'
 
 const App = () => {
   return (
-    <BrowserRouter basename='/AdminPanel/'>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Students />} />
@@ -21,7 +21,7 @@ const App = () => {
           <Route path="classes" element={<Classes />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
